@@ -8,7 +8,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts",
-    "lint-and-fix": "eslint . --ext .ts --fix"
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "copywebviewerfiles": "mkdirp ./public/webviewer/lib && cp -r ../node_modules/@pdftron/webviewer/public/* ./public/webviewer/lib",
+    "copywebviewerfiles:windows": "mkdirp \"./public/webviewer/lib\" && xcopy \"../node_modules/@pdftron/webviewer/public\" \"./public/webviewer/lib\" /s /e /y"
   },
   "dependencies": {
     "common-library": "*"
